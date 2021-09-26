@@ -1,0 +1,238 @@
+html,body{
+    margin: 0;
+    background-color: #1f1f1f;
+    max-width: 100%;
+}
+body::-webkit-scrollbar{
+    background-color: #1f1f1f;
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(101, 248, 33);
+}
+
+
+.social-networks {
+    font-size: 2em;
+}
+
+.container-cover{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image: url("https://images.alphacoders.com/936/thumb-1920-936934.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: movement 25s infinite linear alternate
+}
+
+
+.container-details{
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 70px;
+    color:black;
+    
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 5px;
+    color:black;
+}
+
+.btn-repository{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    color: blue;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 400ms;
+}
+
+.btn-repository:hover{
+    background: blueviolet;
+    color:white;
+    border: 1px solid white;
+}
+.main-container{
+    background-color: #1f1f1f;
+    padding-top: 25px;
+}
+
+.cards-container{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    grid-gap: 20px;
+    padding-top: 30px;
+    background-color: #1f1f1f;
+}
+
+
+.oneCard{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    background-color: #111111;
+    transition: 0.3s;
+}
+
+.oneCard:hover{
+    box-shadow: 0px 0px 9px 1px blueviolet;
+    background-color: #071b0b;
+}
+
+.card-img{
+    position: relative;
+}
+.fluid-img{
+    width: 100%;
+    height: auto;
+}
+
+.body-card{
+    position: relative;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.body-card h4{
+    margin-bottom: 10px;
+    padding: 0px;
+    font-size: 19px;
+    font-weight: bold;
+    color: blue;
+
+}
+.body-card p{
+    margin: 1px;
+    padding: 0px;
+    font-size: 15px;
+    color: grey;
+}
+
+.alive{
+    position:absolute;
+    top: 75px;
+    right: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: blueviolet;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.alive:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+.dead{
+    position:absolute;
+    top: 75px;
+    right: 10px;
+    border: 1px solid red;
+    padding: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    transition: 0.8s;
+    color: red;
+    cursor: pointer;
+}
+.dead:hover{
+    color: white;
+    background-color: red;
+}
+
+.unknown{
+    position:absolute;
+    top: 75px;
+    right: 10px;
+    border: 1px solid grey;
+    padding: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    color: gray;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.unknown:hover{
+    color: white;
+    background-color:grey;
+}
+
+/* Search Bar */
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+@media only screen and (min-width: 1100px) {
+    .cards-container {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
