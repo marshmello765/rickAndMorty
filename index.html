@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rick And Morty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./libraries/bootstrap/bootstrap.min.css"/>
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logorick.png" alt="" width="100" height="30" />
+        </a>
+        <!--search bar-->
+        <div class="collapse navbar-collapse m-0 p-0" id="navbarNav">
+          <div>
+            <div class="wrap">
+              <div class="search">
+                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                 <button type="submit" class="searchButton">
+                   <i class="fa fa-search"></i>
+                </button>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-cover">
+      <div class="container-details">
+        <div class="details">
+          <h1><b>Rick And Morty: Characters</b></h1>
+          <p>
+            Is an American adult animated science fiction sitcom created by
+            Justin Roiland and Dan Harmon for Cartoon Network's nighttime Adult
+            Swim programming block. The series follows the misadventures of
+            cynical mad scientist Rick Sanchez and his good-hearted but fretful
+            grandson Morty Smith, who split their time between domestic life and
+            interdimensional adventures. <br /><br />
+            Roiland voices the eponymous characters, with Chris Parnell, Spencer
+            Grammer and Sarah Chalke voicing the rest of Rick and Morty's
+            family. The series originated from an animated short parody film of
+            Back to the Future, created by Roiland for Channel 101, a short film
+            festival co-founded by Harmon. The series has been acclaimed by
+            critics for its originality, creativity and humor.
+          </p>
+          <br>
+          <a href="https://github.com/marshmello765" class="btn-repository">Visit repository</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="cards-container" id="cards"></div>
+    </div>
+
+    <script src="./libraries/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/utils/fetchData.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
